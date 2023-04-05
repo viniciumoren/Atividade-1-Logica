@@ -1,54 +1,62 @@
-Algoritmo "semnome"
-//Uma fruteira est· vendendo frutas com a seguinte tabela de preÁos:
+Algoritmo "QUEST√ÉO 4"
+// Disciplina   : [Linguagem e L√≥gica de Programa√ß√£o] 
+// Professor   : Antonio Carlos Nicolodi 
+//Uma fruteira est√° vendendo frutas com a seguinte tabela de pre√ßos:
 
-//AtÈ 5 Kg                    Acima de 5 Kg
+//At√© 5 Kg                    Acima de 5 Kg
 //Morango R$ 2,50 por Kg      R$ 2,20 por Kg
-//MaÁ„ R$ 1,80 por Kg         R$ 1,50 por Kg
+//Ma√ß√£ R$ 1,80 por Kg         R$ 1,50 por Kg
 
 //Se o cliente comprar mais de 8 Kg em frutas ou o valor total da
-//compra ultrapassar R$ 25,00,receber· ainda um desconto de 10%
+//compra ultrapassar R$ 25,00,receber√° ainda um desconto de 10%
 //sobre este total. Escreva um algoritmo para ler a quantidade
-//(em Kg) de morangos e a quantidade (em Kg) de maÁas adquiridas
+//(em Kg) de morangos e a quantidade (em Kg) de ma√ßas adquiridas
 //e escreva o valor a ser pago pelo cliente.
 
 
 Var
-     morango, maca, precoDoMorango, precoDoMaca, valortotal: real
+     kilodoMorango, kilodaMaca, precoDoMorango, precoDaMaca, valortotal: real
 
 
 
 Inicio
 
  Escreva ("Kilo do Morango: ")
-  leia   (morango)
-  
- limpatela
-  
- Escreva ("Kilo da MaÁ„: ")
-  leia   (maca)
-  
+  leia   (kiloDoMorango)
+
  limpatela
 
+ Escreva ("Kilo da Ma√ß√£: ")
+  leia   (kiloDaMaca)
 
-Se         (morango<=5)    entao
-           (precoDoMorango=2.50)
-  fimse
+ limpatela
+
+
+Se   (kiloDoMorango<=5)    entao
+     precoDoMorango<- kiloDoMorango*2.50
+     fimse
+
+Se   (kiloDoMorango>5)    entao
+      precoDoMorango<- kiloDoMorango*2.20
+      fimse
+
+Se   (kiloDaMaca<=5)    entao
+     precoDaMaca<- kiloDaMaca*1.80
+     fimse
+
+Se   (kiloDaMaca>5)    entao
+     precoDaMaca<- kiloDaMaca*1.50
+     fimse
   
-Se         (morango>5)    ent„o
-           (precoDoMorango=2.20)
-  fimse
-  
-Se         (maca<=5)    ent„o
-           (precoDoMaca=2.20)
-  fimse
-
-Se         (maca>5)    ent„o
- Escreval: ("Valor da Maca: ", maca*1.50)
-  fimse
 
 
+valorTotal <- precoDaMaca+precoDoMorango
+
+Se (valortotal>25) ou (kiloDoMorango+kiloDaMaca>8) entao
+   Escreval ("Valor total com Desconto: R$", valorTotal*0.70)
+  senao
+  Escreval ("Valor Total a pagar: R$", valortotal)
+   fimse
 
 
-
-
-Fimalgoritmo
+fimalgoritmo

@@ -1,4 +1,4 @@
-Algoritmo "Questão 5 - Calculadora 1"
+Algoritmo "QuestÃ£o 5 - Calculadora 1"
 
 Var
      numero1, numero2, resultado : real
@@ -6,43 +6,43 @@ Var
 
 Inicio
 
-  escreva ("Digite o número: ")
+  escreva ("Digite o nÃºmero: ")
    leia (numero1)
 
   limpatela
 
-  escreva ("Digite uma operação: ")
+  escreva ("Digite uma operaÃ§Ã£o: ")
    leia (operacao)
 
   limpatela
   
-  escreva ("Digite outro número: ")
+  escreva ("Digite outro nÃºmero: ")
    leia (numero2)
    
   limpatela
 
   
-Se operacao= "+" então
+Se operacao= "+" entÃ£o
 
   resultado<- numero1+numero2
 
    fimse
 
-Se operacao= "-" então
+Se operacao= "-" entÃ£o
 
   resultado<- numero1-numero2
 
    fimse
    
-Se operacao= "*" então
+Se operacao= "*" entÃ£o
 
   resultado<- numero1*numero2
 
    fimse
 
-Se operacao= "/" então
+Se operacao= "/" entÃ£o
 
-  resultado<- numero1+numero2
+  resultado<- numero1/numero2
 
    fimse
    
